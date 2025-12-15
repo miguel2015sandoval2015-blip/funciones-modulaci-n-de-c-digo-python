@@ -21,15 +21,14 @@ def procesar_lote_con_registro():
     return unidades, defectuosas, porcentaje, registro        
 
 def mostrar_datos(unidades, defectuosas, porcentaje, registro):
-    print("\---- detalles del lote -----")
+    print("detalles del lote ")
     for linea in registro:
         print(linea)
         
-    print("\--- resumen ----")
+    print(" resumen ")
     print("total de unidades: ", unidades)
     print("defectuosas: ", defectuosas)
     print(f"porcentaje defectuosas:: {porcentaje:.2f}%")
-    print("-----------\n")
 
 
 #**** zona de codigo principal ********   
@@ -47,4 +46,5 @@ def menu_principal():
         else:
             print("opcion invalida. intentar de nuevo.\n ")
             
+
 menu_principal()                        
